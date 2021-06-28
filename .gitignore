@@ -1,0 +1,18 @@
+/node_modules/
+.env
+.env.prod
+
+# Ignore public directory
+/public/
+
+# Ignore build directory
+/build/
+
+# Ignore log output
+*.out
+
+# misc
+*.pem
+
+# Ignore file build (js)
+*.js
