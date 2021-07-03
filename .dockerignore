@@ -1,0 +1,6 @@
+.git/
+.gitignore
+.dockerignore
+.prettierrc.json
+README.md
+Dockerfile

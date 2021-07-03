@@ -10,7 +10,7 @@
     "clean-build": "rm -rf *.js && rm -rf src/*.js && rm -rf src/controller/*.js && rm -rf src/router/*.js",
     "start": "node index.js",
     "docker-build": "docker build . -t fastify_template_babaiyu",
-    "docker-start": "docker run -d -p 8500:8500 fastify_template_babaiyu"
+    "docker-start": "docker run -d -p 0.0.0.0:8500:8500 fastify_template_babaiyu"
   },
   "repository": {
     "type": "git",
