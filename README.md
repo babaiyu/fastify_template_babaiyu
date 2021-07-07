@@ -1,7 +1,10 @@
 # fastify_template_babaiyu
 My Fastify Template
 
-This template project created using Fastify + Typescript
+This template project created using:
+1. Fastify
+2. Typesript
+3. Docker + Nginx
 
 ### Local Development
 ```
@@ -16,6 +19,5 @@ pnpm run start
 
 ### Build & Running for Docker
 ```
-pnpm run docker-build
-pnpm run docker-start
+docker-compose up --build -d
 ```
