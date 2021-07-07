@@ -1,0 +1,8 @@
+.git/
+.gitignore
+.dockerignore
+.prettierrc.json
+Dockerfile
+README.md
+node_modules/
+nginx/
