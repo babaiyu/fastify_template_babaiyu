@@ -11,6 +11,6 @@ RUN npm install && npm run clean-build && npm run build
 
 COPY . .
 
-EXPOSE 8500
+EXPOSE 7999
 
 CMD ["node", "./index.js"]

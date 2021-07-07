@@ -1,7 +1,7 @@
 
 // Config ENV
 export const config = {
-  port: 8500,
+  port: 8000,
   node_env: 'development',
 }
 
