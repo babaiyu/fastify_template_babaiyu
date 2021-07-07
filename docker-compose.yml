@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  fastify:
+    build: ./
+    ports: 
+      - 8499:8499
+  nginx:
+    build: ./nginx
+    ports: 
+      - 8000:8000
