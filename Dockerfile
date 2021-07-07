@@ -5,9 +5,6 @@ WORKDIR /app
 RUN npm install --global pm2
 
 COPY package*.json ./
-COPY tsconfig.json ./
-COPY index.ts ./
-COPY src/ src/
 
 RUN npm install && npm run build
 
