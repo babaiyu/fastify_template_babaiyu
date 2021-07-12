@@ -21,3 +21,8 @@ pnpm run start
 ```
 docker-compose up --build -d
 ```
+
+### Unit Test
+```
+pnpm run test
+```
