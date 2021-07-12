@@ -4,12 +4,15 @@ import fastifyHealth from 'fastify-healthcheck';
 import {config} from './src/config';
 import routes from './src/routes';
 
-const {port, node_env} = config;
+const {port} = config;
+
+const logger = {
+  level: 'info',
+  prettyPrint: true,
+};
 
 // Instance Fastify
-const server = fastify({
-  logger: node_env === 'development' ? true : false,
-});
+const server = fastify({logger});
 
 // Register CORS
 server.register(fastifyCors);
@@ -28,13 +31,9 @@ server.get('/', async (req, reply) => {
 
 // Start Server
 const start = async () => {
-  try {
-    await server.listen(port, '0.0.0.0');
-    console.info(`Server is running at port ${port}`);
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
+  await server.listen(port, '0.0.0.0');
 };
 
 start();
+
+export default server;
