@@ -14,5 +14,5 @@
 # misc
 *.pem
 
-# Ignore file build (js)
-*.js
+# Ignore any test file / folder
+/coverage/
