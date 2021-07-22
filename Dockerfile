@@ -5,6 +5,7 @@ WORKDIR /app
 RUN npm install --global pm2
 
 COPY package*.json ./
+COPY ./ ./
 
 RUN npm install && npm run build
 
